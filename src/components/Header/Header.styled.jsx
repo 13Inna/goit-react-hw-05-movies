@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import bgImg from '../../img/header-bg.jpg';
 
 export const HeaderBg = styled.div`
-  margin: 0 auto;
+  margin:  auto;
   max-width: 1024px;
   min-height: 170px;
 
@@ -45,7 +45,7 @@ export const NavigationList = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
-  //   align-items: center;
+  align-items: center;
 `;
 
 export const NavigationItem = styled.li`

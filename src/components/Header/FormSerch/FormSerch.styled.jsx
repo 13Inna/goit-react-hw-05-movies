@@ -31,7 +31,7 @@ export const Input = styled.input`
     }
     & ~ button {
       color: #ff6b08;
-      opacity: 1;
+      opacity: 6;
     }
   }
 `;
