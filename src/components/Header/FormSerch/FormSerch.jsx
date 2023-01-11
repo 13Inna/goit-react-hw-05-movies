@@ -5,8 +5,8 @@ import { Input, Form, Button, Text } from './FormSerch.styled';
 
 import { ReactComponent as Serch } from '../../../img/search.svg';
 
-export const FormSerch = ({ formSubmit, error }) => {
-  const [tag, setTag] = useState('');
+export const FormSerch = ({ formSubmit, error, query}) => {
+const [tag, setTag] = useState('') || query; 
 
   const handleChange = e => {
     const newTag = e.target.value;
@@ -17,7 +17,6 @@ export const FormSerch = ({ formSubmit, error }) => {
   const handleSubmit = e => {
     e.preventDefault();
     formSubmit(tag);
-    setTag('');
   };
 
   return (

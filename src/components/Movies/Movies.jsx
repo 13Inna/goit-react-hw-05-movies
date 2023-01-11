@@ -50,7 +50,7 @@ export default function Movies() {
   return (
     <>
       <Header>
-        <FormSerch formSubmit={setSerchQuery} error={error} />
+        <FormSerch formSubmit={setSerchQuery} error={error} serchQuery={serchQuery} />
       </Header>
       {films.length !== 0 && <FilmsList films={films} />}
       <Footer />
